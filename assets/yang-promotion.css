@@ -1,0 +1,305 @@
+.dex-promotion-main {
+    display: flex;
+    flex-direction: column;
+}
+.dex-promotion-main .dex-promotion-header {
+    display: flex;
+    flex-direction: column;
+    height: min(80rem,100vh);
+    font-weight: 600;
+}
+.dex-promotion-main .dex-full-header-box .dex-box {
+    background-image: url('yang-promotion-pc-01.png');
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+.dex-promotion-main .dex-full-header-box  {
+    flex: 1;
+}
+.dex-promotion-main .dex-full-header-box .dex-box {
+    height:100%
+}
+.dex-promotion-main .dex-full-footer-box .dex-box {
+    background-image: url('yang-promotion-pc-12.png');
+    background-size: auto 200%;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+.dex-promotion-main .dex-full-footer-box .dex-box {
+    padding:3.6rem 0 4.8rem;
+}
+.dex-promotion-main .dex-full-footer-box .dex-promotion-form {
+    padding-bottom: 0;
+}
+
+.dex-promotion-main .dex-promotion-box {
+    height: 100%;
+}
+
+.dex-promotion-main .dex-promotion-wrapper__image {
+    flex: 1;
+}
+
+.dex-promotion-main .dex-promotion-wrapper__image img {
+    width: 85%;
+    display: block;
+}
+
+.dex-promotion-main .dex-promotion-wrapper__desc {
+    margin-bottom: 5rem;
+}
+
+.dex-promotion-main .dex-promotion-wrapper {
+    height: 100%;
+    padding: calc(2rem / var(--font-body-scale));
+    text-align: left;
+    max-width: 45rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.dex-promotion-main .dex-promotion-form {
+    /* margin-bottom: 2rem; */
+}
+
+.dex-promotion-main .dex-promotion-form__field-wrapper {
+    margin-right: 10%;
+}
+
+.dex-promotion-main .dex-promotion-form__field-wrapper .field {
+    display: block;
+}
+
+.dex-promotion-main .dex-promotion-form__field-wrapper .field::before {
+    visibility: hidden;
+}
+
+.dex-promotion-main .dex-promotion-form__field-wrapper .field::after {
+    visibility: hidden;
+}
+
+.dex-promotion-main .dex-promotion-form__button {
+    font-size: calc(var(--font-heading-scale) * 1.8rem);
+    margin-top: 1.2rem;
+    width: 100%;
+    padding: 0;
+    min-height: calc(4.5rem + var(--buttons-border-width)* 2);
+}
+
+.dex-promotion-main .dex-full-reserve-box  {
+    padding-top:1.2rem;
+}
+.dex-promotion-main .dex-full-reserve-box .dex-box {
+    padding:0;
+    background-color: #ff3131;
+    font-size: min(6.2vw, 6.2rem);
+    line-height: min(6.2vw, 6.2rem);
+    padding: 1.2rem 0;
+    text-align: center;
+}
+
+.dex-promotion-main .dex-kameta-box {
+    padding: 1.2rem
+}
+
+.dex-promotion-main .dex-promotion-kameta__wrapper {
+    border: 0.2rem solid #fff;
+    padding: 1.2rem
+}
+
+.dex-promotion-main .dex-promotion-kameta__wrapper-area1 {
+    position: relative;
+    height: 50vh;
+}
+
+.dex-promotion-main .dex-promotion-kameta__wrapper-area2 {
+    display: flex;
+    /* height: 40vh; */
+}
+.dex-promotion-main .dex-promotion-kameta__wrapper-area2 span {
+    font-weight: 600;
+}
+.dex-promotion-main .dex-promotion-kameta__wrapper-area2-tip{
+    font-size: 4.5vw;
+    /* padding: 6rem 6rem 0; */
+    min-width: 40%;
+    text-align: center;
+    padding-top:min(6vh,6rem);
+    font-weight: 600;
+}
+.dex-promotion-main .dex-promotion-kameta__wrapper-area2 > div:nth-child(2) {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+.dex-promotion-main .dex-promotion-kameta__wrapper-area2 > div:nth-child(2) > div:nth-child(1)  {
+    display: flex;
+    padding:1.2rem 0;
+    font-size: calc(var(--font-heading-scale) * 1.8rem);
+}
+.dex-promotion-main .dex-promotion-kameta__wrapper-area2 > div:nth-child(2) > div:nth-child(1) .dex-promotion-kameta__wrapper-area2-tip{
+    display: none;
+}
+.dex-promotion-main .dex-promotion-kameta__wrapper-area2 > div:nth-child(2) > div:nth-child(2)  {
+    position: relative;
+    height: 30vh;
+}
+.dex-promotion-main .dex-promotion-kameta__wrapper-area2 > div:nth-child(2) > div:nth-child(2) video {
+    width:94%;
+}
+
+.dex-promotion-main .dex-promotion-image-04,
+.dex-promotion-main .dex-promotion-image-06,
+.dex-promotion-main .dex-promotion-image-07,
+.dex-promotion-main .dex-promotion-image-08,
+.dex-promotion-main .dex-promotion-image-10 {
+    background-color: #fff;
+}
+.dex-promotion-main .dex-promotion-image-04 .pc {
+    /* padding:0 2rem; */
+}
+.dex-promotion-main .dex-promotion-image-04 .mob {
+    /* padding:2rem 0; */
+}
+
+/* .dex-promotion-main .dex-promotion-video-04 {
+    margin: 0 0  1.5rem;
+} */
+
+.dex-promotion-main .dex-promotion-video-04 .dex-video-box {
+    height:60vh;
+}
+
+.dex-promotion-main .dex-promotion-image-05 .dex-image-box {
+    background-image: url('yang-promotion-06.png');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    padding:1.2rem;
+}
+.dex-promotion-main .dex-promotion-image-05__box {
+    position: relative;
+}
+.dex-promotion-main .dex-promotion-image-05 .pc {
+    padding-bottom: 3.6rem;
+}
+.dex-promotion-main .dex-promotion-image-05 .pc > div {
+    margin-top: 3.6rem;
+}
+.dex-promotion-main .dex-promotion-image-05 .mob {
+    /* padding-bottom: 2.4rem; */
+}
+.dex-promotion-main .dex-promotion-image-05 .mob > div {
+    margin-top: 2.4rem;
+}
+.dex-promotion-main .dex-promotion-image-05__flex {
+    display: flex;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+.dex-promotion-main .dex-promotion-image-05__flex div:nth-child(1) {
+    flex:1
+}
+.dex-promotion-main .dex-promotion-image-05__flex img {
+    height: 100%;
+    width: 100%;
+}
+.dex-promotion-main .dex-promotion-image-09 {
+    background-color: #f00;
+}
+.dex-promotion-main .dex-promotion-image-10 .dex-box {
+    padding:1.5rem;
+}
+
+@media screen and (max-width: 750px) {
+    .dex-promotion-main .dex-full-header-box .dex-box {
+        background-image: url('yang-promotion-mob-01.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .dex-promotion-main .dex-full-footer-box .dex-box {
+        background-image: url('yang-promotion-mob-12.png');
+    }
+    .dex-promotion-main .dex-full-footer-box .dex-box  {
+        background-size: contain;
+        background-position: center -10%;
+        background-repeat: no-repeat;
+        padding-top: 20vh;
+    }
+    .dex-promotion-main .dex-full-reserve-box  {
+        padding-top:0;
+    }
+    .dex-promotion-main .dex-promotion-wrapper {
+        max-width: 100%;
+        padding-top:0;
+        padding-bottom:0;
+    }
+    .dex-promotion-main .dex-promotion-wrapper__image img {
+        width:60%;
+    }
+    .dex-promotion-main .dex-promotion-wrapper__desc {
+        width: 80%;
+        margin-bottom: 1.2rem;
+        font-size: calc(var(--font-heading-scale)* 2.4rem);
+    }
+    .dex-promotion-main .dex-promotion-form {
+        margin-bottom: 0;
+    }
+    .dex-promotion-main .dex-promotion-form__field-wrapper {
+        margin-right: 0;
+    }
+
+    .dex-promotion-main .dex-promotion-header {
+        /* padding-bottom:env(safe-area-inset-bottom,10vh) */
+        height: 85vh;
+    }
+
+    .dex-promotion-main .dex-promotion-kameta__wrapper-area1 {
+        height: 20vh;
+    }
+    .dex-promotion-main .dex-promotion-kameta__wrapper-area2-tip{
+       display: none;
+    }
+    .dex-promotion-main .dex-promotion-kameta__wrapper-area2 > div:nth-child(2) {
+        margin-left: 0;
+    }
+    .dex-promotion-main .dex-promotion-kameta__wrapper-area2 > div:nth-child(2) > div:nth-child(1) .dex-promotion-kameta__wrapper-area2-tip{
+        display: block;
+    }
+    .dex-promotion-main .dex-promotion-kameta__wrapper-area2 > div:nth-child(2) > div:nth-child(2)  {
+        height: 20vh;
+    }
+    .dex-promotion-main .dex-promotion-kameta__wrapper-area2 > div:nth-child(2) > div:nth-child(2) video {
+        width: 100%;
+    }
+
+    .dex-promotion-main .dex-promotion-image-05__flex {
+        width:92%;
+        left:4%;
+    }
+
+    .dex-promotion-main .dex-promotion-video-04 .dex-video-box {
+        height:30vh;
+    }
+
+    .dex-promotion-main .dex-promotion-image-08 .dex-box {
+        padding-bottom:0;
+    }
+    .dex-promotion-main .dex-promotion-image-10 .dex-box {
+        padding-top:3rem;
+    }
+
+    /* .dex-promotion-main .dex-promotion-image-09{
+        order:1;
+    }
+    .dex-promotion-main .dex-promotion-image-07,
+    .dex-promotion-main .dex-promotion-image-08,
+    .dex-promotion-main .dex-promotion-image-10,
+    .dex-promotion-main .dex-promotion-footer
+    {
+        order:2;
+    } */
+
+}

@@ -1,0 +1,258 @@
+{{ 'yang-base.css' | asset_url | stylesheet_tag }}
+{{ 'yang-promotion.css' | asset_url | stylesheet_tag }}
+
+<div class="dex-main dex-promotion-main">
+  <section class="dex-promotion-header">
+    <div class="dex-full-box dex-full-header-box">
+      <div class="dex-box page-width">
+        <div class="dex-promotion-wrapper">
+          <div class="dex-promotion-wrapper__image">
+            <img src="{{ 'yang-promotion-01.png' | asset_url }}">
+          </div>
+          <h2 class="dex-promotion-wrapper__desc">
+            A Revolutionary Quick-Swap Design That Redefines Knife Customization in Just 30 Seconds!
+          </h2>
+          {% form 'customer', class: 'dex-promotion-form' %}
+            <input type="hidden" name="test" value="dex-promotion">
+            <input type="hidden" name="return_to" value="{{ pages['reserve'].url }}">
+            {% if form.email %}
+              <script>
+                window.location.href = "{{ pages['reserve'].url }}";
+              </script>
+            {% endif %}
+            <input type="hidden" name="contact[tags]" value="dex-newsletter">
+            <div class="dex-promotion-form__field-wrapper">
+              <div class="field">
+                <input
+                  id="dex-promotion-form__email"
+                  type="email"
+                  name="contact[email]"
+                  class="field__input"
+                  value="{{ form.email }}"
+                  aria-required="true"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  autocomplete="email"
+                  placeholder="Email"
+                  required
+                >
+                <label class="field__label" for="dex-promotion-form__email">
+                  {{ 'newsletter.label' | t }}
+                </label>
+                <button
+                  type="submit"
+                  class="dex-promotion-form__button button"
+                  name="commit"
+                  id="Subscribe"
+                >
+                  SIGN UP TO RESERVE OR FOLLOW
+                </button>
+              </div>
+            </div>
+          {% endform %}
+        </div>
+      </div>
+    </div>
+    <div class="dex-full-box dex-full-reserve-box">
+      <div class="dex-reserve-box dex-box page-width">Reserve $5=$50 Value Pack</div>
+    </div>
+  </section>
+  <section class="dex-promotion-kameta">
+    <div class="dex-kameta-box dex-box page-width">
+      <div class="dex-promotion-kameta__wrapper radius">
+        <div class="dex-promotion-kameta__wrapper-area1">
+          <video
+            playsinline="playsinline"
+            autoplay="autoplay"
+            loop="loop"
+            muted="muted"
+            preload="metadata"
+          >
+            <source src="{{'yang-promotion-02.mp4'|asset_url}}" type="video/mp4">
+          </video>
+        </div>
+        <div class="dex-promotion-kameta__wrapper-area2">
+          <div class="dex-promotion-kameta__wrapper-area2-tip">QVS SYSTEM</div>
+          <div>
+            <div>
+              <div class="dex-promotion-kameta__wrapper-area2-tip">QVS SYSTEM</div>
+              <div>
+                <span>KAMETA</span> is an innovative folding knife that redefines personalization, featuring the QVS
+                (Quick Versatility System) for effortless scale swaps in just 30 seconds.
+              </div>
+            </div>
+            <div>
+              <video
+                playsinline="playsinline"
+                autoplay="autoplay"
+                loop="loop"
+                muted="muted"
+                preload="metadata"
+              >
+                <source src="{{'yang-promotion-03.mp4'|asset_url}}" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="dex-promotion-image-02">
+    <div class="dex-image-box dex-box page-width">
+      <div class="pc">
+        <img src="{{ 'yang-promotion-pc-02.png' | asset_url }}">
+      </div>
+      <div class="mob">
+        <img src="{{ 'yang-promotion-mob-02.png' | asset_url }}">
+      </div>
+    </div>
+  </section>
+  <section class="dex-promotion-video-04">
+    <div class="dex-video-box dex-box page-width">
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        loop="loop"
+        muted="muted"
+        preload="metadata"
+      >
+        <source src="{{'yang-promotion-04.mp4'|asset_url}}" type="video/mp4">
+      </video>
+    </div>
+  </section>
+  <section class="dex-promotion-image-11">
+    <div class="dex-image-box dex-box page-width">
+      <div class="pc">
+        <img src="{{ 'yang-promotion-pc-11.png' | asset_url }}">
+      </div>
+      <div class="mob">
+        <img src="{{ 'yang-promotion-mob-11.png' | asset_url }}">
+      </div>
+    </div>
+  </section>
+  <section class="dex-promotion-image-04">
+    <div class="dex-image-box  dex-box  page-width">
+      <div class="pc">
+        <img src="{{ 'yang-promotion-pc-04.png' | asset_url }}">
+      </div>
+      <div class="mob">
+        <img src="{{ 'yang-promotion-mob-04.png' | asset_url }}">
+      </div>
+    </div>
+  </section>
+  <section class="dex-promotion-image-05">
+    <div class="dex-image-box page-width">
+      <div class="pc">
+        <div><img src="{{ 'yang-promotion-pc-05-1.png' | asset_url }}"></div>
+        <div class="dex-promotion-image-05__box">
+          <img src="{{ 'yang-promotion-pc-05-2a.png' | asset_url }}">
+          <div class="dex-promotion-image-05__flex">
+            <div>
+              <video
+                playsinline="playsinline"
+                autoplay="autoplay"
+                loop="loop"
+                muted="muted"
+                preload="metadata"
+              >
+                <source src="{{'yang-promotion-05.mp4'|asset_url}}" type="video/mp4">
+              </video>
+            </div>
+            <div>
+              <img src="{{ 'yang-promotion-pc-05-2b.png' | asset_url }}">
+            </div>
+          </div>
+        </div>
+        <div><img src="{{ 'yang-promotion-pc-05-3.png' | asset_url }}"></div>
+        <div><img src="{{ 'yang-promotion-pc-05-4.png' | asset_url }}"></div>
+      </div>
+      <div class="mob">
+        <img src="{{ 'yang-promotion-mob-05-1.png' | asset_url }}">
+        <div>
+          <img src="{{ 'yang-promotion-mob-05-2a.png' | asset_url }}">
+          <div class="dex-promotion-image-05__box">
+            <img src="{{ 'yang-promotion-mob-05-2b.png' | asset_url }}">
+            <div class="dex-promotion-image-05__flex">
+              <video
+                playsinline="playsinline"
+                autoplay="autoplay"
+                loop="loop"
+                muted="muted"
+                preload="metadata"
+              >
+                <source src="{{'yang-promotion-05.mp4'|asset_url}}" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+        <div><img src="{{ 'yang-promotion-mob-05-3.png' | asset_url }}"></div>
+        <div><img src="{{ 'yang-promotion-mob-05-4.png' | asset_url }}"></div>
+      </div>
+    </div>
+  </section>
+  {% for num in (6..10) %}
+    {%- liquid
+      if num < 10 
+        assign index = '0' | append: num
+      else
+        assign index = num
+      endif
+    -%}
+    <section class="dex-promotion-image-{{ index }}">
+      <div class="dex-image-box dex-box page-width">
+        <div class="pc">
+          <img src="{{ 'yang-promotion-pc-'| append:index | append:'.png' | asset_url }}">
+        </div>
+        <div class="mob">
+          <img src="{{ 'yang-promotion-mob-'| append:index | append:'.png' | asset_url }}">
+        </div>
+      </div>
+    </section>
+  {% endfor %}
+  <section class="dex-promotion-footer">
+    <div class="dex-full-box dex-full-footer-box">
+      <div class="dex-box page-width">
+        <div class="dex-promotion-wrapper">
+          {% form 'customer', class: 'dex-promotion-form' %}
+            <input type="hidden" name="test" value="dex-promotion">
+            <input type="hidden" name="return_to" value="{{ pages['reserve'].url }}">
+            {% if form.email %}
+              <script>
+                window.location.href = "{{ pages['reserve'].url }}";
+              </script>
+            {% endif %}
+            <input type="hidden" name="contact[tags]" value="dex-newsletter">
+            <div class="dex-promotion-form__field-wrapper">
+              <div class="field">
+                <input
+                  id="dex-promotion-form__email"
+                  type="email"
+                  name="contact[email]"
+                  class="field__input"
+                  value="{{ form.email }}"
+                  aria-required="true"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  autocomplete="email"
+                  placeholder="Email"
+                  required
+                >
+                <label class="field__label" for="dex-promotion-form__email">
+                  {{ 'newsletter.label' | t }}
+                </label>
+                <button
+                  type="submit"
+                  class="dex-promotion-form__button button"
+                  name="commit"
+                  id="Subscribe"
+                >
+                  SIGN UP TO RESERVE OR FOLLOW
+                </button>
+              </div>
+            </div>
+          {% endform %}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

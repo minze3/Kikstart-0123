@@ -1,0 +1,192 @@
+
+.dex-reserve-main {
+    position: relative;
+    /* overflow-x: hidden; */
+}
+.dex-reserve-main img {
+    width: 100%;
+}
+.dex-reserve-main button{
+    font-size: calc(var(--font-heading-scale)* 2rem);;
+}
+.dex-reserve-main .dex-reserve-header {
+
+}
+.dex-reserve-main .dex-reserve-header__box {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.dex-reserve-main .dex-reserve-header__box::before, .dex-reserve-main .dex-reserve-header__area1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-image: url('yang-reserve-07.png');
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* 设置透明度 */
+    display: none;
+}
+.dex-reserve-main .dex-reserve-header__box::before {
+    display: block;
+}
+.dex-reserve-main .dex-reserve-header__box-title {
+    font-size: min(6.8rem,6.8vw);
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+}
+.dex-reserve-main .dex-reserve-header__area1 {
+    display:flex;
+    flex:1;
+    padding-bottom: 3rem;
+    position: relative;
+    font-size: calc(var(--font-heading-scale)* 2.8rem);
+    font-weight: 600;
+    padding: 1.8rem;
+}
+
+.dex-reserve-main .dex-reserve-header__area1-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.dex-reserve-main .dex-reserve-header__area1-left > div{
+    margin-bottom: 1.8rem;
+}
+.dex-reserve-main .dex-reserve-header__area1-list {
+    font-size: calc(var(--font-heading-scale)* 2.4rem);
+}
+.dex-reserve-main .dex-reserve-header__area1-list .dex-reserve-header__area1-list-li {
+    display: flex;
+    margin: .6rem 0;
+}
+.dex-reserve-main .dex-reserve-header__area1-list .dex-reserve-header__area1-list-ico {
+    background-image: url('yang-reserve-02.png');
+    width:calc(var(--font-heading-scale)* 3.6rem);
+    height:calc(var(--font-heading-scale)* 3.6rem);
+    background-size: cover;
+    transform: scale(.8);
+    margin-right: .8rem;
+    flex-shrink: 0;
+}
+.dex-reserve-main .dex-reserve-header__area1-list .dex-reserve-header__area1-list-ico img {
+    display: block;
+}
+.dex-reserve-main .dex-reserve-header__area1-list .dex-reserve-header__area1-list-ico.ico2 {
+    background-position-x: 50%;
+}
+.dex-reserve-main .dex-reserve-header__area1-list .dex-reserve-header__area1-list-ico.ico3 {
+    background-position-x: 100%;
+}
+
+.dex-reserve-main .dex-reserve-header__area1-left button {
+    width: 100%;
+    margin: 1.8rem 0 3rem;
+    border-radius: 2.4rem;
+    box-shadow:none;
+}
+.dex-reserve-main .dex-reserve-header__area1-left button::after,
+.dex-reserve-main .dex-reserve-header__area1-left button::before{
+    display: none;
+}
+.dex-reserve-main .dex-reserve-header__area1-button-claim {
+    background-color: #ff3131;
+}
+.dex-reserve-main .dex-reserve-header__area1-button-follow {
+    background-color: #00bf63;
+}
+.dex-reserve-main .dex-reserve-header__area1-right {
+    position: relative;
+    width:40%;
+    flex-shrink: 0;
+    margin-left: 4.8rem;
+    /* background-image: url('yang-reserve-pc-01.png'); */
+    background-size: 94% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* .dex-reserve-main .dex-reserve-header__area1-right img {
+    width: 100%;
+} */
+.dex-reserve-header__box-tipImage {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    height: 40vh;
+    background-image: url('yang-reserve-mob-03.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dex-reserve-header__box-tipImage div{
+    width: 30%;
+    margin-left:1.2rem;
+}
+.dex-reserve-header__box-tipImage div:last-child{
+    position: absolute;
+    right: 1.2rem;
+    bottom: 1.2rem;
+}
+@media screen and (max-width: 750px) {
+    .dex-reserve-main button {
+        font-size: calc(var(--font-heading-scale)* 1.8rem);
+    }
+    .dex-reserve-header__box-tipImage {
+        display: block;
+        padding: 1.2rem;
+        flex:1;
+    }
+    .dex-reserve-main .dex-reserve-header__area1 {
+        padding:1.2rem;
+        flex:unset;
+    }
+    .dex-reserve-main .dex-reserve-header__box::before {
+        display: none;
+    }
+    .dex-reserve-main .dex-reserve-header__area1::before {
+        display: block;
+    }
+    .dex-reserve-main .dex-reserve-header__area1-right {
+        display: none;
+    }
+    /* .dex-reserve-main .dex-reserve-header__box-title {
+        flex:1;
+    } */
+    .dex-reserve-main .dex-reserve-header__box-title > div {
+        background-color: #00c4cc;
+        padding:min(1.2rem,1.2vh) 0;
+    }
+    .dex-reserve-main .dex-reserve-header__area1 {
+        font-size: calc(var(--font-heading-scale)* 2rem);
+    }
+    .dex-reserve-main .dex-reserve-header__area1-left > div{
+        margin-bottom: 1.2rem;
+    }
+    .dex-reserve-main .dex-reserve-header__area1-left button {
+        width: 100%;
+        margin: 1.2rem 0 1.8rem;
+        border-radius: 1.8rem;
+        box-shadow: none;
+    }
+    .dex-reserve-main .dex-reserve-header__area1-list {
+        font-size: calc(var(--font-heading-scale)* 1.8rem);
+    }
+    .dex-reserve-main .dex-reserve-header__area1-list .dex-reserve-header__area1-list-ico {
+        background-image: url(yang-reserve-02.png);
+        width: calc(var(--font-heading-scale)* 2.4rem);
+        height: calc(var(--font-heading-scale)* 2.4rem);
+        background-size: cover;
+        transform: scale(.8);
+        margin-right: .6rem;
+        flex-shrink: 0;
+    }
+
+}
