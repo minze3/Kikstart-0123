@@ -1,0 +1,39 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "custom.overlay",
+  "name": "Overlay group",
+  "sections": {
+    "newsletter-popup": {
+      "type": "newsletter-popup",
+      "settings": {
+        "apparition_delay": 5,
+        "show_only_on_index": true,
+        "show_only_for_visitors": true,
+        "show_only_once": true,
+        "image": "shopify://shop_images/L1040387-_-NR_61073e3f-e5ae-4801-b581-ddc1d47931ab_resized_1000_1000.jpg",
+        "image_position": "left",
+        "title": "Get Exclusive Discounts!",
+        "content": "<p>Join our newsletter today and unlock exclusive discounts, special offers, and insider updates delivered straight to your inbox.</p>"
+      }
+    },
+    "privacy-banner": {
+      "type": "privacy-banner",
+      "settings": {
+        "cookie_bar_title": "Cookie policy",
+        "cookie_bar_content": "<p>I agree to the processing of my data in accordance with the conditions set out in the policy of Privacy.</p>"
+      }
+    }
+  },
+  "order": [
+    "newsletter-popup",
+    "privacy-banner"
+  ]
+}
